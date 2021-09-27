@@ -52,3 +52,16 @@ or if you have enabled pretty URLs, you may use the following URL:
 ```php
 http://localhost/path/to/log-reader
 ```
+
+History Usage
+-----
+
+For every day log view, you can config yii log like this: 
+
+```php
+[
+    'class'   => 'yii\log\FileTarget',
+    'levels'  => ['error', 'warning'],
+    'logFile' => '@runtime/logs/app.log.' . date('Ymd'),
+]
+```
