@@ -1,0 +1,21 @@
+{
+    "name": "lengnuan-v/yii2-log-reader",
+    "description": "yii2,extension,log,reader",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","log","reader"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lengnuan",
+            "email": "25314666@qq.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "lengnuan\\logReader\\": ""
+        }
+    }
+}
