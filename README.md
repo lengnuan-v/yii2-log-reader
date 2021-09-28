@@ -33,9 +33,9 @@ return [
         'class'   => 'lengnuan\logReader\Module',
         'layout'  => "@views/layouts/main",
         'aliases' => [
-            'Backend'  => '@backend/runtime/logs/app.log.' . date('Ymd'),
-            'Frontend' => '@frontend/runtime/logs/app.log.' . date('Ymd'),
-            'Console'  => '@console/runtime/logs/app.log.' . date('Ymd'),
+            'Backend'  => '@backend/runtime/logs/app.log',
+            'Frontend' => '@frontend/runtime/logs/app.log',
+            'Console'  => '@console/runtime/logs/app.log',
         ],
     ],
 ];
@@ -62,6 +62,6 @@ For every day log view, you can config yii log like this:
 [
     'class'   => 'yii\log\FileTarget',
     'levels'  => ['error', 'warning'],
-    'logFile' => '@runtime/logs/app.log.' . date('Ymd'),
+    'logFile' => '@runtime/logs/app.log',
 ]
 ```
